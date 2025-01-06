@@ -4,7 +4,7 @@
   {% for post in post_list %}
     <div class="post-entry">
       <h2><a href="{% url 'post_detail' post.pk %}" class="karla">{{ post.title }}</a></h2>
-      <p>{{ post.body }}</p>
+      <p>{{ post.body|slice:'350' }}....</p>
     </div>
   {% endfor %}
 {% endblock %}
