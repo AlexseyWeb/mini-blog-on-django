@@ -5,6 +5,6 @@
     <h2>{{ object.title }}</h2>
     <p>{{ object.body }}</p>
   </div>
-  <a href="{% url 'post_edit' post.pk %}" class="btn btn-primary">+Редактировать пост</a>
+  <a href="{% url 'post_edit' post.pk %}" class="btn btn-primary">Редактировать пост</a>
   <a href="{% url 'post_delete' post.pk %}" class="btn btn-primary">Удалить пост</a>
 {% endblock %}
