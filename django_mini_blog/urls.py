@@ -22,3 +22,4 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
 ]
+handler404 = "django_mini_blog.views.page_not_found_view"
